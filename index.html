@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gmail Web App Clone</title>
+  </head>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+    rel="stylesheet"
+  />
+  <body>
+    <script src="script.js"></script>
+    <!-- Gmail API Starts -->
+    <script
+      async
+      defer
+      src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()"
+    ></script>
+    <!-- Gmail API Ends -->
+
+    <!-- Header Starts -->
+
+    <div class="header">
+      <!-- Header Left Starts-->
+
+      <div class="header_left">
+        <span class="material-icons"> menu </span>
+        <img src="images/Gmail Logo.png" alt="" />
+      </div>
+
+      <!-- Header Left Ends-->
+
+      <!-- Header Middle Starts-->
+      <div class="header_middle">
+        <span class="material-icons"> search </span>
+        <input type="text" placeholder="Search mail" />
+        <span class="material-icons"> tune </span>
+      </div>
+      <!-- Header Middle Ends-->
+
+      <!-- Header Right Starts-->
+      <div class="header_right">
+        <span class="material-icons"> help_outline </span>
+        <span class="material-icons"> settings </span>
+        <span class="material-icons"> apps </span>
+        <span class="material-icons"> account_circle </span>
+      </div>
+      <!-- Header Right Ends-->
+    </div>
+
+    <!-- Header Ends -->
+
+    <!-- /* Main Body Starts */  -->
+
+    <div class="main_body">
+      <!-- /* Sidebar Starts */  -->
+
+      <div class="sidebar">
+        <div class="sidebar_option">
+          <button class="sidebar_compose">
+            <span> <img src="images/Compose.png" alt="" /> </span>
+            Compose
+          </button>
+        </div>
+
+        <div class="sidebar_option sidebar_option_active">
+          <span class="material-icons"> inbox </span>
+          <p>Inbox</p>
+        </div>
+
+        <div class="sidebar_option">
+          <span class="material-icons"> star </span>
+          <p>Starred</p>
+        </div>
+        <div class="sidebar_option">
+          <span class="material-icons"> schedule </span>
+          <p>Snozzed</p>
+        </div>
+        <div class="sidebar_option">
+          <span class="material-icons"> label_important </span>
+          <p>Important</p>
+        </div>
+        <div class="sidebar_option">
+          <span class="material-icons"> send </span>
+          <p>Sent</p>
+        </div>
+
+        <div class="sidebar_option">
+          <span class="material-icons"> insert_drive_file </span>
+          <p>Drafts</p>
+        </div>
+
+        <div class="sidebar_option">
+          <span class="material-icons"> chat </span>
+          <p>Chat</p>
+        </div>
+
+        <div class="sidebar_option">
+          <span class="material-icons"> schedule_send </span>
+          <p>Scheduled</p>
+        </div>
+
+        <div class="sidebar_option">
+          <span class="material-icons"> delete </span>
+          <p>Trash</p>
+        </div>
+      </div>
+
+      <!-- /* Sidebar Ends */  -->
+
+      <!-- /* Mail Item Body Starts */  -->
+
+      <div class="mail_body">
+        <!-- Mail Setting Starts -->
+
+        <div class="mail_settings">
+          <div class="mail_settings_left">
+            <span class="material-icons"> check_box_outline_blank </span>
+            <span class="material-icons"> arrow_drop_down </span>
+            <span class="material-icons"> refresh </span>
+            <span class="material-icons"> more_vert </span>
+          </div>
+
+          <div class="mail_settings_right">
+            <p>1-50 of 1,243</p>
+            <span class="material-icons"> chevron_left </span>
+            <span class="material-icons"> chevron_right </span>
+          </div>
+        </div>
+
+        <!-- Mail Setting Ends-->
+
+        <!-- Section Starts -->
+
+        <div class="mailbody_section">
+          <div class="section section_active">
+            <span class="material-icons"> inbox </span>
+            <h4>Primary</h4>
+          </div>
+          <div class="section">
+            <span class="material-icons"> people </span>
+            <h4>Social</h4>
+          </div>
+          <div class="section">
+            <span class="material-icons"> local_offer </span>
+            <h4>Promotions</h4>
+          </div>
+        </div>
+
+        <!-- Section Ends -->
+
+        <!-- Mail List Starts -->
+
+        <div class="mailList_list">
+          <!-- Mail List Row Starts -->
+
+          <div class="mail_list_row">
+            <div class="mail_list_row_options">
+              <span class="material-icons"> check_box_outline_blank </span>
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons-outlined"> label </span>
+            </div>
+            <h3 class="mail_list_row_sender">Guvi</h3>
+            <div class="mail_list_row_message">
+              <h4 class="mail_list_row_msg_title">
+                Welcome to the First Hackathon Class
+                <span class="mail_list_row_msg_body">
+                  - This is your 1st task - Create a GMAIL Web App Clone</span
+                >
+              </h4>
+            </div>
+            <p class="mail_list_row_time"><strong>10:23 PM</strong></p>
+          </div>
+
+          <!-- Mail List Row Starts -->
+
+          <!-- Mail List Row Starts -->
+
+          <div class="mail_list_row">
+            <div class="mail_list_row_options">
+              <span class="material-icons"> check_box_outline_blank </span>
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons-outlined"> label </span>
+            </div>
+            <h3 class="mail_list_row_sender">Starbucks</h3>
+            <div class="mail_list_row_message">
+              <h4 class="mail_list_row_msg_title">
+                Free Coupon Code
+                <span class="mail_list_row_msg_body">
+                  - Get free latte for 200 bucks</span
+                >
+              </h4>
+            </div>
+            <p class="mail_list_row_time"><strong>10:58 PM</strong></p>
+          </div>
+
+          <!-- Mail List Row Starts -->
+
+          <!-- Mail List Row Starts -->
+
+          <div class="mail_list_row">
+            <div class="mail_list_row_options">
+              <span class="material-icons"> check_box_outline_blank </span>
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons-outlined"> label </span>
+            </div>
+            <h3 class="mail_list_row_sender">Facebook</h3>
+            <div class="mail_list_row_message">
+              <h4 class="mail_list_row_msg_title">
+                You have got new friends
+                <span class="mail_list_row_msg_body">
+                  - Multiple Freinds are waiting for you</span
+                >
+              </h4>
+            </div>
+            <p class="mail_list_row_time"><strong>11:32 PM</strong></p>
+          </div>
+
+          <!-- Mail List Row Starts -->
+
+          <!-- Mail List Row Starts -->
+
+          <div class="mail_list_row">
+            <div class="mail_list_row_options">
+              <span class="material-icons"> check_box_outline_blank </span>
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons-outlined"> label </span>
+            </div>
+            <h3 class="mail_list_row_sender">Guvi</h3>
+            <div class="mail_list_row_message">
+              <h4 class="mail_list_row_msg_title">
+                Welcome to the First Hackathon Class
+                <span class="mail_list_row_msg_body">
+                  - Please submit your code in netlify</span
+                >
+              </h4>
+            </div>
+            <p class="mail_list_row_time"><strong>00:12 AM</strong></p>
+          </div>
+
+          <!-- Mail List Row Starts -->
+
+          <!-- Mail List Row Starts -->
+
+          <div class="mail_list_row">
+            <div class="mail_list_row_options">
+              <span class="material-icons"> check_box_outline_blank </span>
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons-outlined"> label </span>
+            </div>
+            <h3 class="mail_list_row_sender">PAYTM</h3>
+            <div class="mail_list_row_message">
+              <h4 class="mail_list_row_msg_title">
+                Cashback for you
+                <span class="mail_list_row_msg_body">
+                  - Scan and pay at nearby merchants to get the offer</span
+                >
+              </h4>
+            </div>
+            <p class="mail_list_row_time"><strong>02:31 AM</strong></p>
+          </div>
+
+          <!-- Mail List Row Starts -->
+
+          <div class="mail_list_row">
+            <div class="mail_list_row_options">
+              <span class="material-icons"> check_box_outline_blank </span>
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons-outlined"> label </span>
+            </div>
+            <h3 class="mail_list_row_sender">Guvi</h3>
+            <div class="mail_list_row_message">
+              <h4 class="mail_list_row_msg_title">
+                Welcome to the First Hackathon Class
+                <span class="mail_list_row_msg_body">
+                  - This is your 1st task - Create a GMAIL Web App Clone</span
+                >
+              </h4>
+            </div>
+            <p class="mail_list_row_time"><strong>10:23 PM</strong></p>
+          </div>
+
+          <!-- Mail List Row Starts -->
+
+          <!-- Mail List Row Starts -->
+
+          <div class="mail_list_row">
+            <div class="mail_list_row_options">
+              <span class="material-icons"> check_box_outline_blank </span>
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons-outlined"> label </span>
+            </div>
+            <h3 class="mail_list_row_sender">Starbucks</h3>
+            <div class="mail_list_row_message">
+              <h4 class="mail_list_row_msg_title">
+                Free Coupon Code
+                <span class="mail_list_row_msg_body">
+                  - Get free latte for 200 bucks</span
+                >
+              </h4>
+            </div>
+            <p class="mail_list_row_time"><strong>10:58 PM</strong></p>
+          </div>
+
+          <!-- Mail List Row Starts -->
+
+          <!-- Mail List Row Starts -->
+
+          <div class="mail_list_row">
+            <div class="mail_list_row_options">
+              <span class="material-icons"> check_box_outline_blank </span>
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons-outlined"> label </span>
+            </div>
+            <h3 class="mail_list_row_sender">Facebook</h3>
+            <div class="mail_list_row_message">
+              <h4 class="mail_list_row_msg_title">
+                You have got new friends
+                <span class="mail_list_row_msg_body">
+                  - Multiple Freinds are waiting for you</span
+                >
+              </h4>
+            </div>
+            <p class="mail_list_row_time"><strong>11:32 PM</strong></p>
+          </div>
+
+          <!-- Mail List Row Starts -->
+
+          <!-- Mail List Row Starts -->
+
+          <div class="mail_list_row">
+            <div class="mail_list_row_options">
+              <span class="material-icons"> check_box_outline_blank </span>
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons-outlined"> label </span>
+            </div>
+            <h3 class="mail_list_row_sender">Guvi</h3>
+            <div class="mail_list_row_message">
+              <h4 class="mail_list_row_msg_title">
+                Welcome to the First Hackathon Class
+                <span class="mail_list_row_msg_body">
+                  - Please submit your code in netlify</span
+                >
+              </h4>
+            </div>
+            <p class="mail_list_row_time"><strong>00:12 AM</strong></p>
+          </div>
+
+          <!-- Mail List Row Starts -->
+
+          <!-- Mail List Row Starts -->
+
+          <div class="mail_list_row">
+            <div class="mail_list_row_options">
+              <span class="material-icons"> check_box_outline_blank </span>
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons-outlined"> label </span>
+            </div>
+            <h3 class="mail_list_row_sender">PAYTM</h3>
+            <div class="mail_list_row_message">
+              <h4 class="mail_list_row_msg_title">
+                Cashback for you
+                <span class="mail_list_row_msg_body">
+                  - Scan and pay at nearby merchants to get the offer</span
+                >
+              </h4>
+            </div>
+            <p class="mail_list_row_time"><strong>02:31 AM</strong></p>
+          </div>
+
+          <div class="mail_list_row">
+            <div class="mail_list_row_options">
+              <span class="material-icons"> check_box_outline_blank </span>
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons-outlined"> label </span>
+            </div>
+            <h3 class="mail_list_row_sender">Guvi</h3>
+            <div class="mail_list_row_message">
+              <h4 class="mail_list_row_msg_title">
+                Welcome to the First Hackathon Class
+                <span class="mail_list_row_msg_body">
+                  - This is your 1st task - Create a GMAIL Web App Clone</span
+                >
+              </h4>
+            </div>
+            <p class="mail_list_row_time"><strong>10:23 PM</strong></p>
+          </div>
+
+          <!-- Mail List Row Starts -->
+
+          <!-- Mail List Row Starts -->
+
+          <div class="mail_list_row">
+            <div class="mail_list_row_options">
+              <span class="material-icons"> check_box_outline_blank </span>
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons-outlined"> label </span>
+            </div>
+            <h3 class="mail_list_row_sender">Starbucks</h3>
+            <div class="mail_list_row_message">
+              <h4 class="mail_list_row_msg_title">
+                Free Coupon Code
+                <span class="mail_list_row_msg_body">
+                  - Get free latte for 200 bucks</span
+                >
+              </h4>
+            </div>
+            <p class="mail_list_row_time"><strong>10:58 PM</strong></p>
+          </div>
+
+          <!-- Mail List Row Starts -->
+
+          <!-- Mail List Row Starts -->
+
+          <div class="mail_list_row">
+            <div class="mail_list_row_options">
+              <span class="material-icons"> check_box_outline_blank </span>
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons-outlined"> label </span>
+            </div>
+            <h3 class="mail_list_row_sender">Facebook</h3>
+            <div class="mail_list_row_message">
+              <h4 class="mail_list_row_msg_title">
+                You have got new friends
+                <span class="mail_list_row_msg_body">
+                  - Multiple Freinds are waiting for you</span
+                >
+              </h4>
+            </div>
+            <p class="mail_list_row_time"><strong>11:32 PM</strong></p>
+          </div>
+
+          <!-- Mail List Row Starts -->
+
+          <!-- Mail List Row Starts -->
+
+          <div class="mail_list_row">
+            <div class="mail_list_row_options">
+              <span class="material-icons"> check_box_outline_blank </span>
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons-outlined"> label </span>
+            </div>
+            <h3 class="mail_list_row_sender">Guvi</h3>
+            <div class="mail_list_row_message">
+              <h4 class="mail_list_row_msg_title">
+                Welcome to the First Hackathon Class
+                <span class="mail_list_row_msg_body">
+                  - Please submit your code in netlify</span
+                >
+              </h4>
+            </div>
+            <p class="mail_list_row_time"><strong>00:12 AM</strong></p>
+          </div>
+
+          <!-- Mail List Row Starts -->
+
+          <!-- Mail List Row Starts -->
+
+          <div class="mail_list_row">
+            <div class="mail_list_row_options">
+              <span class="material-icons"> check_box_outline_blank </span>
+              <span class="material-icons"> star_border </span>
+              <span class="material-icons-outlined"> label </span>
+            </div>
+            <h3 class="mail_list_row_sender">PAYTM</h3>
+            <div class="mail_list_row_message">
+              <h4 class="mail_list_row_msg_title">
+                Cashback for you
+                <span class="mail_list_row_msg_body">
+                  - Scan and pay at nearby merchants to get the offer</span
+                >
+              </h4>
+            </div>
+            <p class="mail_list_row_time"><strong>02:31 AM</strong></p>
+          </div>
+
+          <!-- Mail List Row Ends -->
+        </div>
+
+        <!-- Mail List Ends-->
+      </div>
+
+      <!-- Sidebar Right Starts -->
+
+      <div class="sidebar_right">
+        <img
+          src="https://img.icons8.com/color/48/000000/google-calendar--v2.png"
+        />
+        <img src="https://img.icons8.com/color/48/000000/google-keep.png" />
+        <img src="https://img.icons8.com/color/48/000000/google-contacts.png" />
+        <img src="https://img.icons8.com/color/48/000000/task--v1.png" />
+        <img
+          src="https://img.icons8.com/color/48/000000/google-photos-new.png"
+        />
+        <img src="https://img.icons8.com/color/48/000000/google-docs--v1.png" />
+        <img src="https://img.icons8.com/color/48/000000/google-sheets.png" />
+      </div>
+      <!-- Sidebar Right Ends -->
+
+      <!-- /* Mail Item Body Starts */ -->
+    </div>
+    <!-- /* Main Body Ends */ -->
+
+    <!-- Gmail API  -->
+
+    <p>Gmail API Quickstart</p>
+
+    <!--Add buttons to initiate auth sequence and sign out-->
+    <button id="authorize_button" style="display: none">Authorize</button>
+    <button id="signout_button" style="display: none">Sign Out</button>
+
+    <pre id="content" style="white-space: pre-wrap"></pre>
+  </body>
+</html>
